@@ -1,2 +1,2 @@
 # ramingar-gh-pages
-Proyecto prueba para crear mi blog en gh-pages
+Project to create a blog in node.js which you can to publish in GitHub Pages.
