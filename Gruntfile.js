@@ -8,26 +8,23 @@ module.exports = function (grunt) {
       options: {
         layout: 'main.hbs',
         layoutdir: './views/layouts/',
-        partials: './views/partials/**/*.hbs'
+        partials: './views/partials/**/*.hbs',
+        collections: [{
+          name: 'posts',
+          inflection: 'post',
+          sortby: 'posted',
+          sortorder: 'desc'
+        }]
       },
       skeleton: {
         files: [{
           cwd: './views/',
           dest: './dist/',
           expand: true,
-          src: ['**/*.hbs']
-        }]
-      },
-      posts: {
-        files: [{
-          cwd: './views/posts/',
-          dest: './dist/posts/',
-          expand: true,
-          src: ['**/*.md']
+          src: ['**/*.hbs', '**/*.md']
         }]
       }
     }
-    
   });
 
   /* load every plugin in package.json */
