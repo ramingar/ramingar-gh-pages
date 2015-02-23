@@ -1,7 +1,10 @@
 <ul>
 
     {{#posts}}
-    <li>{{post.data.title}} - {{post.tags}}</li>
+    <li>
+      {{post.tags}} - 
+      <a href="./posts/{{post.dest}}">{{post.data.title}}</a>
+    </li>
     {{/posts}}
 
 </ul>
