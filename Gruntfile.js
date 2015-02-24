@@ -14,7 +14,8 @@ module.exports = function (grunt) {
           inflection: 'post',
           sortby: 'posted',
           sortorder: 'desc'
-        }]
+        }],
+        helpers: './helpers/**/*.js'
       },
       skeleton: {
         files: [{
