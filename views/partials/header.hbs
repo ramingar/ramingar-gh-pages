@@ -1,1 +1,5 @@
-<title>Este es un título muy bonito</title>
+<title>{{titleBlog}}
+  {{#if page.data.posts.data.title}}
+    - {{page.data.posts.data.title}}
+  {{/if}}
+</title>

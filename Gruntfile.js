@@ -15,7 +15,8 @@ module.exports = function (grunt) {
           sortby: 'posted',
           sortorder: 'desc'
         }],
-        helpers: './helpers/**/*.js'
+        helpers: './helpers/**/*.js',
+        defaultTitle: 'Rafael Minguet\'s Blog'
       },
       skeleton: {
         files: [{
