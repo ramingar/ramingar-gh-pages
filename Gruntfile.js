@@ -16,16 +16,34 @@ module.exports = function (grunt) {
           sortorder: 'desc'
         }],
         helpers: './helpers/**/*.js',
-        defaultTitle: 'Rafael Minguet\'s Blog'
+        defaultTitle: 'Rafael Minguet\'s Blog',
+//        pathPosts: '/posts/',
+        postsLayout: 'blog.hbs'
       },
       skeleton: {
         files: [{
           cwd: './views/',
           dest: './dist/',
           expand: true,
+//          src: ['**/*.hbs', '**/*.md', '!**/posts/*.*']
           src: ['**/*.hbs', '**/*.md']
         }]
-      }
+      },
+      
+//      blog: {
+//        options: {
+//          layout: 'blog.hbs',
+//          layoutdir: './views/layouts/',
+//          partials: './views/partials/**/*.hbs',
+
+//        },
+//        files: [{
+//          cwd: './views/posts/',
+//          dest: './dist/blog/',
+//          expand: true,
+//          src: ['**/*.hbs', '**/*.md']
+//        }]
+//      }
     }
   });
 

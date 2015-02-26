@@ -2,8 +2,7 @@
     {{#posts}}
     <li>
       {{post.tags}} - 
-      <a href="/posts/{{post.dest}}">{{post.data.title}}</a>
+      <a href="{{pathPosts}}{{post.dest}}">{{post.data.title}}</a>
     </li>
     {{/posts}}
-
 </ul>
