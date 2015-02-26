@@ -1,3 +1,11 @@
 Esta es la página principal!
 
 {{>listPosts}}
+
+Páginas que existen:<br/>
+
+<ul>
+  {{#each pages}}
+    <li><a href="#">{{basename}} - {{data.title}}{{data.posts.data.title}}</a></li>
+  {{/each}}
+</ul>
